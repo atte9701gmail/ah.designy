@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AH Design | ستيكرات - رول اب - بوروبوينت - سيرة ذاتية - أبوظبي الإمارات</title>
+<meta name="description" content="خدمات تصميم احترافية في أبوظبي والإمارات العربية المتحدة. ستيكرات، رول اب ستاند، تصميم بوروبوينت، سيرة ذاتية، بحوث جامعية. تواصل معنا الآن!">
+<meta name="keywords" content="ستيكرات أبوظبي, رول اب ستاند, تصميم بوروبوينت, سيرة ذاتية احترافية, بحوث جامعية, تصميم الإمارات, مصمم أبوظبي, stickers abu dhabi, roll up stand, powerpoint design, CV design, academic research, graphic design UAE, AH Design">
+<meta name="author" content="AH Design - أبوظبي">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="AE-AZ">
+<meta name="geo.placename" content="Abu Dhabi, UAE">
+<meta name="language" content="Arabic">
+
+<meta property="og:title" content="AH Design | تصميم احترافي أبوظبي الإمارات">
+<meta property="og:description" content="ستيكرات، رول اب ستاند، بوروبوينت، سيرة ذاتية، بحوث جامعية - تصميم احترافي في أبوظبي">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AE">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AH Design",
+  "description": "خدمات تصميم احترافية - ستيكرات، رول اب ستاند، بوروبوينت، سيرة ذاتية، بحوث جامعية",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "أبوظبي",
+    "addressRegion": "أبوظبي",
+    "addressCountry": "AE"
+  },
+  "telephone": "+971505543898",
+  "sameAs": [
+    "https://www.instagram.com/ah.designy",
+    "https://www.behance.net/ahdesign2050",
+    "https://www.pinterest.com/adndesign23/"
+  ],
+  "areaServed": ["أبوظبي", "الإمارات العربية المتحدة"],
+  "serviceType": ["تصميم ستيكرات", "رول اب ستاند", "تصميم بوروبوينت", "سيرة ذاتية", "بحوث جامعية"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --dark: #0D0D0D;
+  --dark2: #141414;
+  --dark3: #1E1E1E;
+  --dark4: #2A2A2A;
+  --white: #FAFAFA;
+  --gray: #888;
+  --gray-light: #CCCCCC;
+  --accent: #C9A84C;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--dark);
+  color: var(--white);
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+/* ===== LOADING SCREEN ===== */
+#loader {
+  position: fixed; inset: 0;
+  background: var(--dark);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s;
+}
+.loader-inner {
+  display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
+}
+.loader-logo-img {
+  width: 80px; height: 80px; object-fit: contain;
+  filter: invert(1);
+  animation: pulse 1s infinite alternate;
+}
+.loader-text {
+  font-size: 1rem; font-weight: 700;
+  letter-spacing: 6px; color: var(--gold);
+  animation: pulse 1s infinite alternate;
+}
+@keyframes pulse { from { opacity: 0.3; } to { opacity: 1; } }
+
+/* ===== NAV ===== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 4rem;
+  background: rgba(13,13,13,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  transition: all 0.3s;
+}
+.nav-logo-wrap {
+  display: flex; align-items: center; gap: 0.8rem;
+  text-decoration: none;
+}
+.nav-logo-img {
+  height: 44px; width: auto;
+  filter: invert(1);
+  transition: transform 0.3s;
+}
+.nav-logo-wrap:hover .nav-logo-img { transform: scale(1.05); }
+.nav-logo-text {
+  font-size: 1.5rem; font-weight: 900;
+  color: var(--gold); letter-spacing: 3px;
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: var(--gray-light); font-size: 0.9rem; font-weight: 600;
+  text-decoration: none; letter-spacing: 1px;
+  transition: color 0.3s; position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; right: 0;
+  width: 0; height: 1px; background: var(--gold);
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+/* Social icons in nav */
+.nav-social { display: flex; gap: 0.6rem; align-items: center; }
+.nav-social a {
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(201,168,76,0.25);
+  color: var(--gray-light); font-size: 0.85rem;
+  text-decoration: none; transition: all 0.3s;
+  border-radius: 0;
+}
+.nav-social a:hover {
+  background: var(--gold); color: var(--dark);
+  border-color: var(--gold);
+}
+
+/* ===== HERO ===== */
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  position: relative; overflow: hidden;
+  padding: 8rem 2rem 4rem;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-grid {
+  position: absolute; inset: 0; opacity: 0.04;
+  background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-content { position: relative; z-index: 2; max-width: 900px; }
+
+/* Logo in hero */
+.hero-logo-wrap {
+  margin-bottom: 2rem;
+  animation: fadeDown 0.8s ease both;
+}
+.hero-logo-img {
+  width: 120px; height: 120px; object-fit: contain;
+  filter: invert(1) sepia(1) saturate(2) hue-rotate(5deg) brightness(0.9);
+}
+
+.hero-badge {
+  display: inline-block;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold); font-size: 0.8rem; font-weight: 600;
+  padding: 0.4rem 1.5rem; letter-spacing: 3px;
+  margin-bottom: 2rem;
+  animation: fadeDown 0.8s 0.1s ease both;
+}
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900; line-height: 1.1;
+  letter-spacing: -1px;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+.hero-title span { color: var(--gold); }
+.hero-sub {
+  font-size: 1.1rem; color: var(--gray); font-weight: 300;
+  margin: 1.5rem 0 2.5rem; line-height: 1.8;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+.hero-cta {
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  animation: fadeUp 0.8s 0.6s ease both;
+}
+
+/* Hero social bar */
+.hero-social {
+  display: flex; gap: 1rem; justify-content: center; align-items: center;
+  margin-top: 3rem;
+  animation: fadeUp 0.8s 0.8s ease both;
+}
+.hero-social a {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: var(--gray); font-size: 0.8rem; font-weight: 600;
+  text-decoration: none; letter-spacing: 1px;
+  transition: color 0.3s; padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.hero-social a:hover { color: var(--gold); border-color: rgba(201,168,76,0.4); }
+.hero-social-icon { font-size: 1rem; }
+
+.btn-primary {
+  background: var(--gold); color: var(--dark);
+  padding: 0.9rem 2.5rem; font-family: 'Cairo', sans-serif;
+  font-weight: 700; font-size: 1rem; border: none; cursor: pointer;
+  letter-spacing: 1px; transition: all 0.3s; text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline {
+  background: transparent; color: var(--white);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.9rem 2.5rem; font-family: 'Cairo', sans-serif;
+  font-weight: 600; font-size: 1rem; cursor: pointer;
+  letter-spacing: 1px; transition: all 0.3s; text-decoration: none;
+  display: inline-block;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+@keyframes fadeUp { from { opacity:0; transform: translateY(30px); } to { opacity:1; transform: translateY(0); } }
+@keyframes fadeDown { from { opacity:0; transform: translateY(-20px); } to { opacity:1; transform: translateY(0); } }
+
+/* ===== SERVICES ===== */
+#services { padding: 6rem 4rem; }
+.section-label {
+  font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 4px; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 0.8rem;
+}
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem); font-weight: 900;
+  line-height: 1.2; margin-bottom: 1rem;
+}
+.section-title span { color: var(--gold); }
+.section-desc { color: var(--gray); font-size: 1rem; max-width: 500px; margin-bottom: 3rem; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5px;
+  background: rgba(201,168,76,0.1);
+}
+.service-card {
+  background: var(--dark2);
+  padding: 2.5rem 2rem;
+  position: relative; overflow: hidden;
+  cursor: pointer; transition: background 0.3s;
+}
+.service-card::before {
+  content: ''; position: absolute; bottom: 0; right: 0;
+  width: 0; height: 2px; background: var(--gold);
+  transition: width 0.4s;
+}
+.service-card:hover { background: var(--dark3); }
+.service-card:hover::before { width: 100%; }
+.service-icon { font-size: 2.5rem; margin-bottom: 1.2rem; display: block; }
+.service-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
+.service-desc { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
+.service-price { margin-top: 1.2rem; font-size: 0.85rem; color: var(--gold); font-weight: 600; }
+
+/* ===== PORTFOLIO ===== */
+#portfolio { padding: 6rem 4rem; background: var(--dark2); }
+.portfolio-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
+.filter-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.filter-btn {
+  background: transparent; border: 1px solid rgba(255,255,255,0.15);
+  color: var(--gray-light); padding: 0.5rem 1.2rem;
+  font-family: 'Cairo', sans-serif; font-size: 0.85rem;
+  cursor: pointer; transition: all 0.3s; font-weight: 600;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--gold); border-color: var(--gold); color: var(--dark); }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+.portfolio-item {
+  position: relative; overflow: hidden; aspect-ratio: 4/3;
+  cursor: pointer; background: var(--dark3);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s;
+}
+.portfolio-item:hover { transform: scale(1.02); }
+.portfolio-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.portfolio-item:hover .portfolio-img { transform: scale(1.08); }
+.portfolio-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 1.5rem; opacity: 0; transition: opacity 0.3s;
+}
+.portfolio-item:hover .portfolio-overlay { opacity: 1; }
+.portfolio-item-title { font-size: 1.1rem; font-weight: 700; }
+.portfolio-item-cat { font-size: 0.8rem; color: var(--gold); margin-top: 0.3rem; }
+.portfolio-placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--dark4); font-size: 3rem; gap: 0.5rem;
+}
+.portfolio-placeholder span { font-size: 0.85rem; color: var(--gray); font-weight: 600; letter-spacing: 1px; }
+
+/* ===== PORTFOLIO CTA (Behance / Pinterest) ===== */
+.portfolio-external {
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  margin-top: 3rem; padding-top: 3rem;
+  border-top: 1px solid rgba(201,168,76,0.15);
+}
+.ext-link {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.8rem 1.8rem;
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gray-light); font-size: 0.9rem; font-weight: 600;
+  text-decoration: none; letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.ext-link:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+.ext-link-icon { font-size: 1.1rem; }
+
+/* ===== STATS ===== */
+#stats { padding: 4rem; background: var(--gold); }
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; max-width: 1200px; margin: 0 auto; text-align: center;
+}
+.stat-num { font-size: 3.5rem; font-weight: 900; color: var(--dark); line-height: 1; }
+.stat-label { font-size: 0.9rem; color: rgba(13,13,13,0.7); font-weight: 600; margin-top: 0.5rem; letter-spacing: 1px; }
+
+/* ===== CONTACT ===== */
+#contact { padding: 6rem 4rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1100px; margin: 0 auto; }
+.contact-info h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+.contact-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start; }
+.contact-icon { font-size: 1.3rem; padding-top: 3px; }
+.contact-text label { font-size: 0.75rem; color: var(--gold); font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 0.2rem; }
+.contact-text p { font-size: 1rem; color: var(--gray-light); }
+.contact-text a { color: var(--gray-light); text-decoration: none; transition: color 0.3s; }
+.contact-text a:hover { color: var(--gold); }
+
+/* Social links block in contact */
+.contact-social-wrap { margin-top: 2rem; }
+.contact-social-wrap label { font-size: 0.75rem; color: var(--gold); font-weight: 700; letter-spacing: 2px; display: block; margin-bottom: 1rem; }
+.contact-social-links { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+.contact-social-link {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--gray-light); font-size: 0.82rem; font-weight: 600;
+  text-decoration: none; letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+.contact-social-link:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+.contact-form input, .contact-form textarea, .contact-form select {
+  background: var(--dark2); border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white); padding: 0.9rem 1.2rem;
+  font-family: 'Cairo', sans-serif; font-size: 0.95rem;
+  outline: none; transition: border-color 0.3s; direction: rtl;
+}
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--gold); }
+.contact-form textarea { min-height: 120px; resize: vertical; }
+.contact-form select option { background: var(--dark2); }
+#form-msg { display: none; padding: 0.8rem; background: rgba(201,168,76,0.1); border: 1px solid var(--gold); color: var(--gold); font-size: 0.9rem; text-align: center; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--dark2);
+  border-top: 1px solid rgba(201,168,76,0.15);
+  padding: 2.5rem 4rem;
+}
+.footer-main {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;
+}
+.footer-logo-wrap { display: flex; align-items: center; gap: 0.8rem; }
+.footer-logo-img { height: 40px; filter: invert(1); opacity: 0.8; }
+.footer-logo-text { font-size: 1.4rem; font-weight: 900; color: var(--gold); letter-spacing: 3px; }
+.footer-social { display: flex; gap: 0.6rem; }
+.footer-social a {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid rgba(201,168,76,0.2);
+  color: var(--gray); font-size: 0.9rem;
+  text-decoration: none; transition: all 0.3s;
+}
+.footer-social a:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-text { color: var(--gray); font-size: 0.85rem; }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a { color: var(--gray); font-size: 0.8rem; text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-seo { font-size: 0.72rem; color: rgba(255,255,255,0.08); width: 100%; text-align: center; margin-top: 1rem; }
+
+/* ===== SCROLL TOP ===== */
+#scrollTop {
+  position: fixed; bottom: 6rem; left: 2rem;
+  background: var(--gold); color: var(--dark);
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; cursor: pointer;
+  opacity: 0; transition: opacity 0.3s;
+  border: none; z-index: 50;
+}
+#scrollTop.visible { opacity: 1; }
+
+/* ===== WHATSAPP FAB ===== */
+.whatsapp-fab {
+  position: fixed; bottom: 2rem; right: 2rem;
+  background: #25D366; color: white;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  z-index: 50; transition: transform 0.3s;
+}
+.whatsapp-fab:hover { transform: scale(1.1); }
+
+/* ===== ADMIN (hidden - only accessible via secret) ===== */
+#admin-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.9); z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+#admin-overlay.open { display: flex; align-items: center; justify-content: center; }
+#login-box, #admin-panel {
+  background: var(--dark2); border: 1px solid rgba(201,168,76,0.3);
+  padding: 2.5rem; width: 90%; max-width: 480px;
+}
+#admin-panel { max-width: 900px; max-height: 90vh; overflow-y: auto; }
+.admin-title { font-size: 1.5rem; font-weight: 700; color: var(--gold); margin-bottom: 0.5rem; letter-spacing: 2px; }
+.admin-subtitle { color: var(--gray); font-size: 0.85rem; margin-bottom: 2rem; }
+.admin-input {
+  width: 100%; background: var(--dark3);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white; padding: 0.9rem 1rem;
+  font-family: 'Cairo', sans-serif; font-size: 0.95rem;
+  outline: none; margin-bottom: 1rem; direction: rtl;
+}
+.admin-input:focus { border-color: var(--gold); }
+#login-error { color: #ff6b6b; font-size: 0.85rem; margin-top: -0.5rem; margin-bottom: 1rem; display: none; }
+.close-btn {
+  position: absolute; top: 1rem; left: 1rem;
+  background: none; border: 1px solid rgba(255,255,255,0.2);
+  color: var(--gray-light); width: 36px; height: 36px;
+  cursor: pointer; font-size: 1rem; transition: all 0.2s;
+}
+.close-btn:hover { border-color: var(--gold); color: var(--gold); }
+#admin-overlay > div { position: relative; }
+.admin-tabs { display: flex; gap: 0; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.admin-tab {
+  background: none; border: none; color: var(--gray);
+  padding: 0.8rem 1.5rem; font-family: 'Cairo', sans-serif;
+  font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  border-bottom: 2px solid transparent; transition: all 0.2s; letter-spacing: 1px;
+}
+.admin-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+.admin-tab-content { display: none; }
+.admin-tab-content.active { display: block; }
+.admin-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.admin-form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.admin-form-group label { font-size: 0.8rem; color: var(--gold); font-weight: 600; letter-spacing: 1px; }
+.admin-form-group.full { grid-column: 1 / -1; }
+.work-items-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+.work-item-entry {
+  background: var(--dark3); padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+.work-item-info .wi-title { font-size: 0.95rem; font-weight: 600; }
+.work-item-info .wi-cat { font-size: 0.8rem; color: var(--gold); }
+.work-item-actions { display: flex; gap: 0.5rem; }
+.wi-del-btn {
+  background: none; border: 1px solid rgba(255,100,100,0.4);
+  color: #ff6b6b; width: 32px; height: 32px;
+  cursor: pointer; font-size: 0.9rem; transition: all 0.2s;
+}
+.wi-del-btn:hover { background: rgba(255,100,100,0.1); }
+.success-msg { background: rgba(201,168,76,0.1); border: 1px solid var(--gold); color: var(--gold); padding: 0.8rem; text-align: center; font-size: 0.9rem; margin-top: 1rem; display: none; }
+.seo-tip { background: var(--dark3); border-right: 3px solid var(--gold); padding: 1rem 1.2rem; margin-bottom: 1rem; }
+.seo-tip h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--gold-light); }
+.seo-tip p, .seo-tip ul { font-size: 0.85rem; color: var(--gray-light); line-height: 1.7; }
+.seo-tip ul { padding-right: 1.2rem; }
+.seo-tip ul li { margin-bottom: 0.3rem; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .nav-social { display: none; }
+  #services, #portfolio, #contact { padding: 4rem 1.5rem; }
+  footer { padding: 1.5rem; }
+  .footer-main { flex-direction: column; align-items: center; text-align: center; }
+  .footer-bottom { flex-direction: column; align-items: center; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .admin-form-grid { grid-template-columns: 1fr; }
+  #stats { padding: 3rem 1.5rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-social { gap: 0.5rem; }
+  .hero-social a { font-size: 0.75rem; padding: 0.3rem 0.6rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <img class="loader-logo-img" src="https://i.ibb.co/0jQZQZQ/logo.png" alt="AH Design Logo" onerror="this.style.display='none'">
+    <div class="loader-text">AH·DESIGN</div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="#" class="nav-logo-wrap">
+    <img class="nav-logo-img"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/SVG_logo.svg/64px-SVG_logo.svg.png"
+      alt="AH Design"
+      id="navLogoImg"
+      onerror="this.style.display='none'">
+    <span class="nav-logo-text">AH</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#portfolio">الأعمال</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+  <div class="nav-social">
+    <a href="https://www.instagram.com/ah.designy" target="_blank" title="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://www.behance.net/ahdesign2050" target="_blank" title="Behance">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.726-3h3.427c-.103-1.2-.962-1.954-1.819-1.954-.905 0-1.517.771-1.608 1.954zM9 12.165V10h2.714c.956 0 2.286.35 2.286 1.808 0 .917-.567 1.449-1.246 1.762v.03c1.031.164 1.776.906 1.776 2.115 0 1.834-1.667 2.285-3.01 2.285H9v-5.835zM11.127 11v2.156h.895c.603 0 1.247-.257 1.247-1.062 0-.839-.611-1.094-1.247-1.094H11.127zm0 3.4V17h1.268c.803 0 1.498-.306 1.498-1.31 0-1.042-.815-1.29-1.604-1.29H11.127z"/></svg>
+    </a>
+    <a href="https://www.pinterest.com/adndesign23/" target="_blank" title="Pinterest">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="https://wa.me/971505543898" target="_blank" title="WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <!-- Logo in hero -->
+    <div class="hero-logo-wrap">
+      <img id="heroLogoImg"
+        src="/mnt/user-data/uploads/1775381691539_image.png"
+        alt="AH Design Logo"
+        class="hero-logo-img"
+        style="filter: invert(1) sepia(0.3) saturate(1.5) hue-rotate(5deg);"
+        onerror="this.style.display='none'">
+    </div>
+
+    <div class="hero-badge">أبوظبي · الإمارات العربية المتحدة</div>
+    <h1 class="hero-title">تصميم <span>يُعبّر</span><br>عن هويتك</h1>
+    <p class="hero-sub">ستيكرات · رول اب ستاند · بوروبوينت احترافي<br>سيرة ذاتية · بحوث جامعية · وأكثر</p>
+    <div class="hero-cta">
+      <a href="#portfolio" class="btn-primary">اكتشف أعمالي</a>
+      <a href="https://wa.me/971505543898" class="btn-outline" target="_blank">تواصل الآن 💬</a>
+    </div>
+
+    <!-- Social links below CTA -->
+    <div class="hero-social">
+      <a href="https://www.instagram.com/ah.designy" target="_blank">
+        <span class="hero-social-icon">📸</span> @ah.designy
+      </a>
+      <a href="https://www.behance.net/ahdesign2050" target="_blank">
+        <span class="hero-social-icon">🎨</span> Behance
+      </a>
+      <a href="https://www.pinterest.com/adndesign23/" target="_blank">
+        <span class="hero-social-icon">📌</span> Pinterest
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="section-label">ما أقدمه</div>
+  <h2 class="section-title">خدمات <span>احترافية</span></h2>
+  <p class="section-desc">حلول تصميم متكاملة لأفراد وشركات في أبوظبي والإمارات</p>
+  <div class="services-grid" id="servicesGrid"></div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <div class="section-label">معرض الأعمال</div>
+      <h2 class="section-title">أحدث <span>أعمالي</span></h2>
+    </div>
+    <div class="filter-tabs" id="filterTabs"></div>
+  </div>
+  <div class="portfolio-grid" id="portfolioGrid"></div>
+
+  <!-- External portfolio links -->
+  <div class="portfolio-external">
+    <a href="https://www.behance.net/ahdesign2050" target="_blank" class="ext-link">
+      <span class="ext-link-icon">🎨</span>
+      شاهد المزيد على Behance
+    </a>
+    <a href="https://www.pinterest.com/adndesign23/" target="_blank" class="ext-link">
+      <span class="ext-link-icon">📌</span>
+      تصفح على Pinterest
+    </a>
+    <a href="https://www.instagram.com/ah.designy" target="_blank" class="ext-link">
+      <span class="ext-link-icon">📸</span>
+      تابعنا على Instagram
+    </a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats">
+  <div class="stats-grid">
+    <div><div class="stat-num" data-target="500">0</div><div class="stat-label">مشروع مكتمل</div></div>
+    <div><div class="stat-num" data-target="200">0</div><div class="stat-label">عميل راضٍ</div></div>
+    <div><div class="stat-num" data-target="5">0</div><div class="stat-label">سنوات خبرة</div></div>
+    <div><div class="stat-num" data-target="100">0</div><div class="stat-label">% التزام بالمواعيد</div></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div style="text-align:center; margin-bottom:3rem;">
+    <div class="section-label">تواصل معنا</div>
+    <h2 class="section-title">ابدأ <span>مشروعك</span> الآن</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>معلومات التواصل</h3>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          <label>الموقع</label>
+          <p>أبوظبي، الإمارات العربية المتحدة</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div class="contact-text">
+          <label>واتساب</label>
+          <p><a href="https://wa.me/971505543898" target="_blank">+971 50 554 3898</a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⏰</div>
+        <div class="contact-text">
+          <label>أوقات العمل</label>
+          <p>السبت - الخميس: 9 صباحاً - 10 مساءً</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⚡</div>
+        <div class="contact-text">
+          <label>وقت التسليم</label>
+          <p>24 - 72 ساعة حسب المشروع</p>
+        </div>
+      </div>
+
+      <!-- Social Media Block -->
+      <div class="contact-social-wrap">
+        <label>وسائل التواصل الاجتماعي</label>
+        <div class="contact-social-links">
+          <a class="contact-social-link" href="https://www.instagram.com/ah.designy" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a class="contact-social-link" href="https://www.behance.net/ahdesign2050" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.726-3h3.427c-.103-1.2-.962-1.954-1.819-1.954-.905 0-1.517.771-1.608 1.954zM9 12.165V10h2.714c.956 0 2.286.35 2.286 1.808 0 .917-.567 1.449-1.246 1.762v.03c1.031.164 1.776.906 1.776 2.115 0 1.834-1.667 2.285-3.01 2.285H9v-5.835zM11.127 11v2.156h.895c.603 0 1.247-.257 1.247-1.062 0-.839-.611-1.094-1.247-1.094H11.127zm0 3.4V17h1.268c.803 0 1.498-.306 1.498-1.31 0-1.042-.815-1.29-1.604-1.29H11.127z"/></svg>
+            Behance
+          </a>
+          <a class="contact-social-link" href="https://www.pinterest.com/adndesign23/" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            Pinterest
+          </a>
+          <a class="contact-social-link" href="https://wa.me/971505543898" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="اسمك الكريم *" required>
+        <input type="tel" placeholder="رقم الهاتف / واتساب *" required>
+        <select required>
+          <option value="">اختر الخدمة المطلوبة</option>
+          <option>ستيكرات</option>
+          <option>رول اب ستاند</option>
+          <option>تصميم بوروبوينت</option>
+          <option>سيرة ذاتية احترافية</option>
+          <option>بحث جامعي</option>
+          <option>شعار وهوية بصرية</option>
+          <option>بنر وإعلانات</option>
+          <option>خدمة أخرى</option>
+        </select>
+        <textarea placeholder="وصف المشروع..."></textarea>
+        <button type="submit" class="btn-primary" style="width:100%">إرسال الطلب ✉</button>
+      </form>
+      <div id="form-msg">✓ تم إرسال طلبك بنجاح! سنتواصل معك قريباً</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-logo-wrap">
+      <img class="footer-logo-img"
+        src="/mnt/user-data/uploads/1775381691539_image.png"
+        alt="AH Design"
+        onerror="this.style.display='none'">
+      <span class="footer-logo-text">AH·DESIGN</span>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ah.designy" target="_blank" title="Instagram">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://www.behance.net/ahdesign2050" target="_blank" title="Behance">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.726-3h3.427c-.103-1.2-.962-1.954-1.819-1.954-.905 0-1.517.771-1.608 1.954zM9 12.165V10h2.714c.956 0 2.286.35 2.286 1.808 0 .917-.567 1.449-1.246 1.762v.03c1.031.164 1.776.906 1.776 2.115 0 1.834-1.667 2.285-3.01 2.285H9v-5.835zM11.127 11v2.156h.895c.603 0 1.247-.257 1.247-1.062 0-.839-.611-1.094-1.247-1.094H11.127zm0 3.4V17h1.268c.803 0 1.498-.306 1.498-1.31 0-1.042-.815-1.29-1.604-1.29H11.127z"/></svg>
+      </a>
+      <a href="https://www.pinterest.com/adndesign23/" target="_blank" title="Pinterest">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://wa.me/971505543898" target="_blank" title="WhatsApp">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-text">© 2025 AH Design – جميع الحقوق محفوظة</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/ah.designy" target="_blank">Instagram</a>
+      <a href="https://www.behance.net/ahdesign2050" target="_blank">Behance</a>
+      <a href="https://www.pinterest.com/adndesign23/" target="_blank">Pinterest</a>
+    </div>
+  </div>
+  <div class="footer-seo">
+    مصمم جرافيك أبوظبي | ستيكرات الإمارات | رول اب ستاند | تصميم بوروبوينت | سيرة ذاتية احترافية |
+    بحث جامعي أبوظبي | Graphic Designer Abu Dhabi UAE | Stickers Roll Up Stand PowerPoint CV Design
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a class="whatsapp-fab" href="https://wa.me/971505543898?text=مرحباً، أود الاستفسار عن خدماتكم" target="_blank" title="تواصل عبر واتساب">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- Scroll Top -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ===== ADMIN OVERLAY (hidden - secret access only) ===== -->
+<div id="admin-overlay">
+  <!-- Login Box -->
+  <div id="login-box">
+    <button class="close-btn" onclick="closeAdmin()">✕</button>
+    <div class="admin-title">لوحة التحكم</div>
+    <div class="admin-subtitle">أدخل بيانات الدخول للمتابعة</div>
+    <input class="admin-input" type="text" id="login-user" placeholder="اسم المستخدم" autocomplete="off">
+    <input class="admin-input" type="password" id="login-pass" placeholder="كلمة المرور" autocomplete="off">
+    <div id="login-error">❌ بيانات الدخول غير صحيحة</div>
+    <button class="btn-primary" style="width:100%" onclick="doLogin()">دخول ←</button>
+  </div>
+
+  <!-- Admin Panel -->
+  <div id="admin-panel" style="display:none">
+    <button class="close-btn" onclick="closeAdmin()">✕</button>
+    <div class="admin-title">لوحة إدارة المحتوى</div>
+    <div class="admin-subtitle">AH Design – أبوظبي</div>
+
+    <div class="admin-tabs">
+      <button class="admin-tab active" onclick="switchTab('works',this)">📁 الأعمال</button>
+      <button class="admin-tab" onclick="switchTab('services',this)">⚙ الخدمات</button>
+      <button class="admin-tab" onclick="switchTab('settings',this)">🔧 الإعدادات</button>
+      <button class="admin-tab" onclick="switchTab('seo',this)">🔍 SEO دليل</button>
+    </div>
+
+    <div id="tab-works" class="admin-tab-content active">
+      <p style="font-size:0.85rem; color:var(--gray); margin-bottom:1.5rem;">أضف أعمالك لتظهر في معرض الأعمال</p>
+      <div class="admin-form-grid">
+        <div class="admin-form-group">
+          <label>عنوان العمل</label>
+          <input class="admin-input" id="wi-title" placeholder="مثال: رول اب لشركة الخليج">
+        </div>
+        <div class="admin-form-group">
+          <label>التصنيف</label>
+          <select class="admin-input" id="wi-cat">
+            <option>ستيكرات</option><option>رول اب ستاند</option><option>بوروبوينت</option>
+            <option>سيرة ذاتية</option><option>بحث جامعي</option><option>شعار وهوية</option>
+            <option>بنر وإعلانات</option><option>أخرى</option>
+          </select>
+        </div>
+        <div class="admin-form-group full">
+          <label>رابط الصورة (اختياري)</label>
+          <input class="admin-input" id="wi-img" placeholder="https://...">
+        </div>
+        <div class="admin-form-group full">
+          <label>وصف العمل</label>
+          <input class="admin-input" id="wi-desc" placeholder="وصف قصير للعمل">
+        </div>
+      </div>
+      <button class="btn-primary" onclick="addWork()" style="margin-top:1rem">+ إضافة العمل</button>
+      <div class="success-msg" id="work-success">✓ تمت الإضافة بنجاح!</div>
+      <div class="work-items-list" id="worksList"></div>
+    </div>
+
+    <div id="tab-services" class="admin-tab-content">
+      <p style="font-size:0.85rem; color:var(--gray); margin-bottom:1.5rem;">تعديل الخدمات المعروضة</p>
+      <div id="servicesAdminList"></div>
+    </div>
+
+    <div id="tab-settings" class="admin-tab-content">
+      <p style="font-size:0.85rem; color:var(--gray); margin-bottom:1.5rem;">إعدادات الموقع والتواصل</p>
+      <div style="display:flex; flex-direction:column; gap:1rem;">
+        <div class="admin-form-group">
+          <label>رقم واتساب</label>
+          <input class="admin-input" id="set-wa" placeholder="971505543898">
+        </div>
+        <div class="admin-form-group">
+          <label>اسمك / اسم الشركة</label>
+          <input class="admin-input" id="set-name" placeholder="AH Design">
+        </div>
+        <div class="admin-form-group">
+          <label>وصف الصفحة الرئيسية</label>
+          <input class="admin-input" id="set-tagline" placeholder="تصميم يعبر عن هويتك">
+        </div>
+        <button class="btn-primary" onclick="saveSettings()">حفظ الإعدادات</button>
+        <div class="success-msg" id="settings-success">✓ تم الحفظ!</div>
+      </div>
+    </div>
+
+    <div id="tab-seo" class="admin-tab-content">
+      <p style="font-size:0.85rem; color:var(--gold); margin-bottom:1.5rem; font-weight:600;">⚡ دليل نشر موقعك على Google</p>
+      <div class="seo-tip">
+        <h4>1. استضف موقعك على GitHub Pages</h4>
+        <ul>
+          <li>اذهب إلى github.com وأنشئ حساباً مجانياً</li>
+          <li>ارفع ملف HTML باسم index.html</li>
+          <li>فعّل GitHub Pages من الإعدادات</li>
+        </ul>
+      </div>
+      <div class="seo-tip">
+        <h4>2. سجّل في Google Search Console</h4>
+        <ul>
+          <li>search.google.com/search-console</li>
+          <li>أضف رابط موقعك واطلب الفهرسة</li>
+        </ul>
+      </div>
+      <div class="seo-tip">
+        <h4>3. Google Business Profile</h4>
+        <ul>
+          <li>business.google.com → أضف "AH Design أبوظبي"</li>
+          <li>يجعلك تظهر في خرائط جوجل</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== DATA =====
+let siteData = JSON.parse(localStorage.getItem('ahdesign_data') || 'null') || {
+  works: [],
+  settings: { wa: '971505543898', name: 'AH Design', tagline: 'تصميم يُعبّر عن هويتك' },
+  services: [
+    { icon: '🏷️', title: 'ستيكرات احترافية', desc: 'تصميم ستيكرات بجودة عالية للمنتجات، الأحداث، والعلامات التجارية.', price: 'تواصل للسعر' },
+    { icon: '🖼️', title: 'رول اب ستاند', desc: 'تصميم رول اب ستاند جاذب للمعارض والفعاليات. يبرز علامتك التجارية.', price: 'تواصل للسعر' },
+    { icon: '📊', title: 'تصميم بوروبوينت', desc: 'عروض PowerPoint احترافية لمحاضراتك وأعمالك.', price: 'تواصل للسعر' },
+    { icon: '📄', title: 'سيرة ذاتية احترافية', desc: 'CV يفتح لك أبواب الوظائف. تصميم عصري يبرز مهاراتك.', price: 'تواصل للسعر' },
+    { icon: '📚', title: 'بحوث جامعية', desc: 'تنسيق البحوث الجامعية والمشاريع وفق المعايير الأكاديمية.', price: 'تواصل للسعر' },
+    { icon: '✨', title: 'شعار وهوية بصرية', desc: 'تصميم شعار فريد وهوية بصرية متكاملة.', price: 'تواصل للسعر' },
+    { icon: '📢', title: 'بنرات وإعلانات', desc: 'بنرات رقمية وطباعية لحملاتك التسويقية.', price: 'تواصل للسعر' },
+    { icon: '🎨', title: 'تصميم مخصص', desc: 'لديك فكرة مختلفة؟ نحوّل أفكارك إلى تصاميم مذهلة.', price: 'تواصل للسعر' },
+  ]
+};
+
+function save() { localStorage.setItem('ahdesign_data', JSON.stringify(siteData)); }
+
+// ===== RENDER SERVICES =====
+function renderServices() {
+  document.getElementById('servicesGrid').innerHTML = siteData.services.map(s => `
+    <div class="service-card">
+      <span class="service-icon">${s.icon}</span>
+      <div class="service-title">${s.title}</div>
+      <div class="service-desc">${s.desc}</div>
+      <div class="service-price">${s.price}</div>
+    </div>
+  `).join('');
+}
+
+// ===== RENDER PORTFOLIO =====
+function renderPortfolio(filter='الكل') {
+  const cats = ['الكل', ...new Set(siteData.works.map(w=>w.cat))];
+  document.getElementById('filterTabs').innerHTML = cats.map(c =>
+    `<button class="filter-btn ${c===filter?'active':''}" onclick="renderPortfolio('${c}')">${c}</button>`
+  ).join('');
+
+  const items = filter==='الكل' ? siteData.works : siteData.works.filter(w=>w.cat===filter);
+  const grid = document.getElementById('portfolioGrid');
+
+  if (!items.length) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--gray)">
+      <div style="font-size:3rem;margin-bottom:1rem">🎨</div>
+      <p>أضف أعمالك من لوحة التحكم لتظهر هنا</p>
+    </div>`;
+    return;
+  }
+  grid.innerHTML = items.map((w,i) => `
+    <div class="portfolio-item">
+      ${w.img
+        ? `<img class="portfolio-img" src="${w.img}" alt="${w.title}" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="portfolio-placeholder">🎨<span>${w.cat}</span></div>`
+      }
+      <div class="portfolio-overlay">
+        <div class="portfolio-item-title">${w.title}</div>
+        <div class="portfolio-item-cat">${w.cat}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===== STATS COUNTER =====
+function animateStats() {
+  document.querySelectorAll('[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target);
+    let current = 0;
+    const step = Math.ceil(target/60);
+    const timer = setInterval(() => {
+      current = Math.min(current+step, target);
+      el.textContent = current + (el.dataset.target==='100'?'':'+');
+      if(current>=target) clearInterval(timer);
+    }, 30);
+  });
+}
+new IntersectionObserver(entries => {
+  if(entries[0].isIntersecting){ animateStats(); }
+}, {threshold:0.3}).observe(document.getElementById('stats'));
+
+// ===== ADMIN – SECRET ACCESS =====
+// لوحة التحكم مخفية تماماً من الصفحة
+// للدخول: اكتب "admin" في أي مكان على الصفحة 5 مرات سريعاً، أو استخدم Ctrl+Shift+A
+let secretKey = '';
+document.addEventListener('keydown', e => {
+  // Ctrl+Shift+A = فتح الأدمن
+  if(e.ctrlKey && e.shiftKey && e.key === 'A') {
+    e.preventDefault();
+    openAdmin();
+    return;
+  }
+  secretKey += e.key;
+  if(secretKey.length > 10) secretKey = secretKey.slice(-10);
+  if(secretKey.toLowerCase().includes('ahdesign')) {
+    openAdmin();
+    secretKey = '';
+  }
+});
+
+function openAdmin() {
+  document.getElementById('admin-overlay').classList.add('open');
+  document.getElementById('login-box').style.display = 'block';
+  document.getElementById('admin-panel').style.display = 'none';
+}
+function closeAdmin() {
+  document.getElementById('admin-overlay').classList.remove('open');
+}
+function doLogin() {
+  const u = document.getElementById('login-user').value.trim();
+  const p = document.getElementById('login-pass').value.trim();
+  if(u==='ah.designy' && p==='112358hazza') {
+    document.getElementById('login-box').style.display = 'none';
+    document.getElementById('admin-panel').style.display = 'block';
+    loadAdminSettings(); renderWorksList(); renderServicesAdmin();
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('login-pass').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+});
+
+function switchTab(tab, btn) {
+  document.querySelectorAll('.admin-tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  if(btn) btn.classList.add('active');
+}
+
+function addWork() {
+  const title = document.getElementById('wi-title').value.trim();
+  if(!title) return alert('أدخل عنوان العمل');
+  siteData.works.unshift({
+    title,
+    cat: document.getElementById('wi-cat').value,
+    img: document.getElementById('wi-img').value.trim(),
+    desc: document.getElementById('wi-desc').value.trim(),
+    date: new Date().toLocaleDateString('ar')
+  });
+  save(); renderWorksList(); renderPortfolio();
+  document.getElementById('wi-title').value='';
+  document.getElementById('wi-img').value='';
+  document.getElementById('wi-desc').value='';
+  const s=document.getElementById('work-success');
+  s.style.display='block'; setTimeout(()=>s.style.display='none',3000);
+}
+
+function renderWorksList() {
+  const list = document.getElementById('worksList');
+  if(!siteData.works.length){ list.innerHTML='<p style="color:var(--gray);font-size:0.85rem;text-align:center;padding:1rem">لا توجد أعمال بعد</p>'; return; }
+  list.innerHTML = siteData.works.map((w,i)=>`
+    <div class="work-item-entry">
+      <div class="work-item-info">
+        <div class="wi-title">${w.title}</div>
+        <div class="wi-cat">${w.cat} · ${w.date}</div>
+      </div>
+      <button class="wi-del-btn" onclick="deleteWork(${i})">🗑</button>
+    </div>
+  `).join('');
+}
+
+function deleteWork(i) {
+  if(confirm('هل تريد حذف هذا العمل؟')){ siteData.works.splice(i,1); save(); renderWorksList(); renderPortfolio(); }
+}
+
+function renderServicesAdmin() {
+  document.getElementById('servicesAdminList').innerHTML = siteData.services.map((s,i)=>`
+    <div class="work-item-entry" style="flex-direction:column;align-items:stretch;">
+      <div style="display:flex;gap:0.8rem;align-items:center;margin-bottom:0.5rem;">
+        <span style="font-size:1.5rem">${s.icon}</span>
+        <input class="admin-input" style="flex:1;margin:0" value="${s.title}" onchange="siteData.services[${i}].title=this.value;save();renderServices()">
+        <input class="admin-input" style="width:140px;margin:0" value="${s.price}" onchange="siteData.services[${i}].price=this.value;save();renderServices()" placeholder="السعر">
+      </div>
+      <input class="admin-input" style="margin:0" value="${s.desc}" onchange="siteData.services[${i}].desc=this.value;save();renderServices()">
+    </div>
+  `).join('');
+}
+
+function loadAdminSettings() {
+  document.getElementById('set-wa').value = siteData.settings.wa;
+  document.getElementById('set-name').value = siteData.settings.name;
+  document.getElementById('set-tagline').value = siteData.settings.tagline;
+}
+
+function saveSettings() {
+  siteData.settings.wa = document.getElementById('set-wa').value.trim();
+  siteData.settings.name = document.getElementById('set-name').value.trim();
+  siteData.settings.tagline = document.getElementById('set-tagline').value.trim();
+  save();
+  const s=document.getElementById('settings-success');
+  s.style.display='block'; setTimeout(()=>s.style.display='none',3000);
+}
+
+// ===== FORM =====
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('form-msg').style.display='block';
+  e.target.reset();
+  setTimeout(()=>document.getElementById('form-msg').style.display='none',5000);
+}
+
+// ===== SCROLL =====
+window.addEventListener('scroll', ()=>{
+  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY>400);
+});
+
+// ===== LOADER =====
+window.addEventListener('load', ()=>{
+  setTimeout(()=>{
+    const l=document.getElementById('loader');
+    l.style.opacity='0';
+    setTimeout(()=>l.style.display='none',600);
+  }, 1000);
+});
+
+// ===== LOGO INLINE (use uploaded logo as base64) =====
+// The logo image tag references the local file for when hosted
+// No inline JS needed - images are referenced directly
+
+// ===== INIT =====
+renderServices();
+renderPortfolio();
+</script>
+</body>
+</html>
